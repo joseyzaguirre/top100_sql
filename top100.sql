@@ -36,3 +36,5 @@ select pelicula.nombre_pelicula from pelicula join reparto on pelicula.id = repa
 select nombre_pelicula, anio from pelicula where anio >= 1990 and anio <= 1999 order by nombre_pelicula asc;
 
 -- requerimiento 7
+
+select nombre_pelicula, length(nombre_pelicula) as longitud_titulo from pelicula;
